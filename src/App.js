@@ -6,6 +6,8 @@ function App() {
 
     <div className="App">
       <h1> hi</h1>   
+      <Row title="NETFLIX ORIGINALS" />
+      <Row title="Trending Now" />
     </div>
     
   );
