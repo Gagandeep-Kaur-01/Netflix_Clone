@@ -15,7 +15,11 @@ function Row({ title, fetchUrl }) {
        return request;       
      }
      fetchData();
-  }, []);
+  }, [fetchUrl]);   /* Whenever use anything inside useEffect, 
+  if any variable that is being pulled in from outside
+  but it's used inside of the useEffect, we have to include inside of here.
+  Reason: because it's dependent on that variable,
+  so dependency, every time this changes we have to update our useEffect so that way */
 
   return (
 
