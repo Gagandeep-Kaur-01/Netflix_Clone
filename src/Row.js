@@ -15,11 +15,16 @@ function Row({ title, fetchUrl }) {
        return request;       
      }
      fetchData();
-  }, [fetchUrl]);   /* Whenever use anything inside useEffect, 
+  }, [fetchUrl]);   
+  
+  /* Whenever use anything inside useEffect, 
   if any variable that is being pulled in from outside
   but it's used inside of the useEffect, we have to include inside of here.
   Reason: because it's dependent on that variable,
-  so dependency, every time this changes we have to update our useEffect so that way */
+  so dependency, every time this changes we have to update our useEffect so that way 
+  Why this (fetchUrl) one: Because this is outside of the block, 
+  we need to tell useEffect that you're using this variable which is outside the block
+  The reason why is because that way useEffect knows something changed so I need to refile the code*/
 
   return (
 
