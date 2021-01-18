@@ -6,9 +6,13 @@ import requests from "./Requests";
 function App() {
   return (
 
-    <div className="App">
+    <div className="app">
       <h1> Netflix Clone Project </h1>   
-      <Row title="NETFLIX ORIGINALS"  fetchUrl={requests.fetchNetflixOriginals}/>
+      <Row 
+        title="NETFLIX ORIGINALS"  
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+      />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />  
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />    
       <Row title="Action Movies" fetchUrl={requests. fetchActionMovies} />    
