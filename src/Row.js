@@ -44,7 +44,7 @@ function Row({ title, fetchUrl }) {
 
         {movies.map(movie => (
           //"/obLBdhLxheKg8Li1qO11r2SwmYO.jpg"
-          <img src={`movie.poster_path`} alt={movie.name}/> /* if it doesn't get the image, it'll just get the name */
+          <img src={`${base_url}${movie.poster_path}`} alt={movie.name}/> /* if it doesn't get the image, it'll just get the name */
         ))}
       </div>            
 
