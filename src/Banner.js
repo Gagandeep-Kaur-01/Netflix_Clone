@@ -2,7 +2,7 @@ import React from 'react'
 
 function Banner() {
     return (
-        <header>
+        <header> {/* <<<Background image */}
             {/* title */}
             {/* div > 2 buttons : 'Play' & ''My List' */}
             {/* description */}
