@@ -2,6 +2,11 @@
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
+  padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
 }
 
 .row_poster {
