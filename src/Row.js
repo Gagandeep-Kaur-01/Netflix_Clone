@@ -26,7 +26,7 @@ function Row({ title, fetchUrl }) {
   we need to tell useEffect that you're using this variable which is outside the block
   The reason why is because that way useEffect knows something changed so I need to refile the code*/
 
-  console.log(movies);
+  console.table(movies);
 
   return ( 
 
