@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Banner() {
+    const [movie, setMovie] = useState([]);
     return (
         <header> {/* <<<Background image */}
             {/* title */}
