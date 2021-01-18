@@ -1,3 +1,7 @@
+.row {
+  margin-left: 20px;
+}
+
 .row_posters {
   display: flex;
   overflow-x: scroll;
