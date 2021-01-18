@@ -1,3 +1,7 @@
+.row_posters {
+  display: flex;
+}
+
 .row_poster {
   object-fit: contain;
   width: 100%;
