@@ -23,7 +23,9 @@ function Banner() {
     console.log(movie);
     
     return (
-        <header> {/* <<<Background image */}
+        <header> 
+            {" "}
+            {/* <<<Background image */}
             {/* title */}
             {/* div > 2 buttons : 'Play' & ''My List' */}
             {/* description */}
