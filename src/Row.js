@@ -42,12 +42,11 @@ function Row({ title, fetchUrl }) {
       <div className="row_posters">
         {/* several row_poster(s) */}
 
-        {movies.map(movie => (
-          //"/obLBdhLxheKg8Li1qO11r2SwmYO.jpg"
-          <img 
+        {movies.map(movie => (          
+          <img                         //"/obLBdhLxheKg8Li1qO11r2SwmYO.jpg"
             className="row_poster"
             src={`${base_url}${movie.poster_path}`} 
-            alt={movie.name}/> /* if it doesn't get the image, it'll just get the name */
+            alt={movie.name}/>        /* if it doesn't get the image, it'll just get the name */
         ))}
       </div>            
 
