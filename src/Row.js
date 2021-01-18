@@ -28,14 +28,25 @@ function Row({ title, fetchUrl }) {
 
   console.log(movies);
 
-  return (
+  return ( 
 
-    <div>
+    <div className="row">
 
-      {/* title */}
+      {/* title.................................................... */}
       <h2> {title} </h2>
 
-      {/* container -> posters */}      
+      {/* container -> posters ..................................... */}   
+
+      <div className="row_posters">
+        {/* several row_poster(s) */}
+
+        {movies.map(movie => (
+          <img src={movie} alt={movie.name}/> /* if it doesn't get the image, it'll just get the name */
+        ))}
+      </div>
+
+         
+
 
     </div>
   );
