@@ -22,16 +22,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
      fetchData();
   }, [fetchUrl]);   
 
-  const opts = {
-    height: "390",
-    width: "100%",
-    playerVars: {
-      //https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
-    },
-  };
-  
-  /* Whenever use anything inside useEffect, 
+    /* Whenever use anything inside useEffect, 
   if any variable that is being pulled in from outside
   but it's used inside of the useEffect, we have to include inside of here.
   Reason: because it's dependent on that variable,
@@ -39,6 +30,16 @@ function Row({ title, fetchUrl, isLargeRow }) {
   Why this (fetchUrl) one: Because this is outside of the block, 
   we need to tell useEffect that you're using this variable which is outside the block
   The reason why is because that way useEffect knows something changed so I need to refile the code*/
+
+  const opts = {
+    height: "390",
+    width: "100%",
+    playerVars: {
+      //https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  }; 
+
 
   console.table(movies);
 
