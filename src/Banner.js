@@ -52,7 +52,7 @@ function Banner() {
 
             {/* description */}
             <h1 className="banner_description">
-                {movie?.overview}
+                {truncate(movie?.overview, 150)}
             </h1>
 
             </div>
