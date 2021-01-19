@@ -20,6 +20,14 @@ function Row({ title, fetchUrl, isLargeRow }) {
      }
      fetchData();
   }, [fetchUrl]);   
+
+  const opts = {
+    height: "390",
+    width: "100%",
+    playerVars: {
+      //https://developers.google.com/youtube/player_parameters
+    },
+  };
   
   /* Whenever use anything inside useEffect, 
   if any variable that is being pulled in from outside
