@@ -46,6 +46,9 @@ function Banner() {
             </div>
 
             {/* description */}
+            <h1 className="banner_description">
+                {movie?.overview}
+            </h1>
 
             </div>
         </header>
