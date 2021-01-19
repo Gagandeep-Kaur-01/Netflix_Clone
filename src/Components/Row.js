@@ -41,6 +41,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     },
   }; 
 
+  //for adding movie trailer popups......................
   const handleClick = (movie) => {
     if(trailerUrl) {
       setTrailerUrl("");
@@ -53,7 +54,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
       .catch((error) => console.log(error));
     }
   }
-
 
   console.table(movies);
 
