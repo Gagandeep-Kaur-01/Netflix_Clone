@@ -38,7 +38,7 @@ function Banner() {
               backgroundPosition: "center center"
           }}
         > 
-            <div className="banner_contents"> 
+          <div className="banner_contents"> 
             {/* title */}
             <h1 className="banner_title">                
                 {movie?.title || movie?.name || movie?.original_name}
@@ -54,8 +54,9 @@ function Banner() {
             <h1 className="banner_description">
                 {truncate(movie?.overview, 150)}
             </h1>
+          </div>
 
-            </div>
+          <div className="banner--fadeBottom" />
         </header>
     )
 }
