@@ -40,6 +40,19 @@ function Row({ title, fetchUrl, isLargeRow }) {
     },
   }; 
 
+  const handleClick = (movie) => {
+    if(trailerUrl) {
+      setTrailerUrl("");
+    } else {
+      movieTrailer(movie?.name || "")
+      .then(url => {
+        const urlParams = new URLSearchParams(new URL(url).search);
+        setTrailerUrl(urlParams.get('v'));
+      })
+      .catch((error) => console.log(error));
+    }
+  }
+
 
   console.table(movies);
 
