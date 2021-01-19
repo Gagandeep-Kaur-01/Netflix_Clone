@@ -13,6 +13,10 @@
   transition: all 0.5s;
 }
 
+.nav_black {
+  background-color: #111;
+}
+
 .nav_logo {
   position: fixed;
   left: 20px;
@@ -25,8 +29,4 @@
   right: 20px;
   width: 30px;
   object-fit: contain;
-}
-
-.nav_black {
-  background-color: #111;
 }
