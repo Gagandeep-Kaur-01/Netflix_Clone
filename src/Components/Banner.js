@@ -29,7 +29,7 @@ function Banner() {
     
     return (
         <header className="banner"
-        /* <<<Background image */
+          /* <<<Background image */
           style={{
               backgroundSize: "cover",
               backgroundImage: `url(
