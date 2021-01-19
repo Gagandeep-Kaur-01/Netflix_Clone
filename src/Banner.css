@@ -8,3 +8,8 @@
   padding-top: 140px;
   height: 190px;
 }
+.banner_title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
