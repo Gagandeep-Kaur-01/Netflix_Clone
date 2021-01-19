@@ -52,6 +52,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
         ))}
       </div>  
 
+      <Youtube videoId={trailerUrl} opts={opts} />
+
     </div>
   );
 }
